@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parure Thioup Bleu - Senartisans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/transitions.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/images/logo/logo-senartisans.png" alt="Senartisans" width="80">
+            </div>
+            <p>Chargement...</p>
+        </div>
+    </div>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo + Nom -->
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo-senartisans.png" alt="Senartisans" class="logo-img">
+                <span class="logo-text">Senartisans</span>
+            </a>
+            
+            <!-- Navigation Desktop (visible seulement sur desktop) -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="produits.html" class="nav-link">Boutique</a></li>
+                    <li><a href="temoins.html" class="nav-link">Témoignages</a></li>
+                    <li><a href="quiz.html" class="nav-link">Quiz Style</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Actions utilisateur -->
+            <div class="header-actions">
+                <!-- Favoris -->
+                <a href="favoris.html" class="icon-btn" id="fav-btn">
+                    <img src="assets/icons/heart-icon.svg" alt="Favoris" class="icon">
+                    <span class="fav-count">0</span>
+                </a>
+                
+                <!-- Panier -->
+                <button class="icon-btn" id="cart-btn">
+                    <img src="assets/icons/cart-icon.svg" alt="Panier" class="icon">
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <!-- Menu Mobile (visible seulement sur mobile) -->
+                <button class="icon-btn" id="menu-btn">
+                    <img src="assets/icons/menu-icon.svg" alt="Menu" class="icon">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-content">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="assets/images/produits/parure-1.jpg" alt="Parure Thioup Bleu" id="main-image">
+                    </div>
+                    <div class="image-thumbnails">
+                        <img src="assets/images/produits/parure-1.jpg" alt="Vue 1" class="thumbnail active">
+                        <img src="assets/images/produits/parure-1-alt1.jpg" alt="Vue 2" class="thumbnail">
+                        <img src="assets/images/produits/parure-1-alt2.jpg" alt="Vue 3" class="thumbnail">
+                        <img src="assets/images/produits/parure-1-alt3.jpg" alt="Vue 4" class="thumbnail">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Accueil</a> / 
+                        <a href="produits.html">Boutique</a> / 
+                        <span>Parure Thioup Bleu</span>
+                    </nav>
+                    
+                    <h1>Parure Thioup Bleu</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="rating-text">(4.9/5 - 23 avis)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">45.000 FCFA</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Cette parure de lit complète en tie & dye traditionnel sénégalais apporte une touche d'élégance africaine à votre chambre. Confectionnée à la main à Mbour avec des draps recyclés de qualité supérieure.</p>
+                        
+                        <div class="features">
+                            <h3>Caractéristiques :</h3>
+                            <ul>
+                                <li>✅ 100% coton recyclé</li>
+                                <li>✅ Teinture naturelle "thioup"</li>
+                                <li>✅ Lavable en machine</li>
+                                <li>✅ Motifs uniques et traditionnels</li>
+                                <li>✅ Parure complète (drap housse + taies)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label for="size-select">Taille :</label>
+                            <select id="size-select" class="size-select" required>
+                                <option value="">Choisir une taille</option>
+                                <option value="140x190">140x190 cm</option>
+                                <option value="160x200">160x200 cm</option>
+                                <option value="180x200">180x200 cm</option>
+                            </select>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label for="quantity">Quantité :</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10" class="qty-input">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart-single" id="add-to-cart-single">
+                            Ajouter au panier
+                        </button>
+                        <button class="btn btn-outline add-to-fav" id="add-to-fav">
+                            <img src="assets/icons/heart-icon.svg" alt="Favoris" class="icon">
+                            Ajouter aux favoris
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Livraison :</strong> 3-5 jours ouvrés
+                        </div>
+                        <div class="meta-item">
+                            <strong>Retour :</strong> 14 jours satisfait ou remboursé
+                        </div>
+                        <div class="meta-item">
+                            <strong>Paiement :</strong> Mobile Money, Virement, WhatsApp
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Spécifications</button>
+                    <button class="tab-btn" data-tab="reviews">Avis clients</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Parure de Lit Artisanale Thioup</h3>
+                        <p>Notre parure de lit thioup est le fruit d'un savoir-faire ancestral sénégalais. Chaque pièce est unique, teinte à la main selon la technique traditionnelle du tie & dye.</p>
+                        
+                        <h4>Composition de la parure :</h4>
+                        <ul>
+                            <li>1 drap housse</li>
+                            <li>2 taies d'oreiller</li>
+                            <li>1 housse de couette (optionnelle)</li>
+                        </ul>
+                        
+                        <h4>Entretien :</h4>
+                        <p>Lavage en machine à 30°C maximum. Ne pas utiliser d'eau de javel. Sécher à l'ombre pour préserver les couleurs.</p>
+                    </div>
+                    
+                    <div class="tab-pane" id="specifications">
+                        <table class="specs-table">
+                            <tr>
+                                <td><strong>Matière</strong></td>
+                                <td>100% coton recyclé</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Technique</strong></td>
+                                <td>Teinture thioup (tie & dye)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Origine</strong></td>
+                                <td>Mbour, Sénégal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tailles disponibles</strong></td>
+                                <td>140x190, 160x200, 180x200 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Entretien</strong></td>
+                                <td>Lavage machine 30°C, séchage à l'ombre</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-score">4.9/5</div>
+                                <div class="stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <div class="rating-count">23 avis</div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="review-author">Aïcha D.</div>
+                                    <div class="review-rating">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    "Les couleurs sont magnifiques et la qualité du tissu est exceptionnelle. Je recommande !"
+                                </div>
+                                <div class="review-date">15 mars 2024</div>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="review-author">Pierre L.</div>
+                                    <div class="review-rating">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    "Commande facile et livraison rapide. Le produit est encore plus beau en vrai."
+                                </div>
+                                <div class="review-date">10 mars 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Produits Similaires</h2>
+                <p>Découvrez d'autres parures de notre collection</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/produits/parure-2.jpg" alt="Parure Thioup Vert" loading="lazy">
+                        <button class="fav-btn">
+                            <img src="assets/icons/heart-icon.svg" alt="Ajouter aux favoris" class="icon">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Parure Thioup Vert</h3>
+                        <p class="product-desc">Motifs traditionnels sur fond vert aréol</p>
+                        <div class="product-meta">
+                            <span class="product-price">42.000 FCFA</span>
+                        </div>
+                        <a href="produit.html" class="btn btn-outline">Voir le produit</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/produits/parure-3.jpg" alt="Parure Thioup Indigo" loading="lazy">
+                        <button class="fav-btn">
+                            <img src="assets/icons/heart-icon.svg" alt="Ajouter aux favoris" class="icon">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Parure Thioup Indigo</h3>
+                        <p class="product-desc">Teinture naturelle indigo sur coton bio</p>
+                        <div class="product-meta">
+                            <span class="product-price">48.000 FCFA</span>
+                        </div>
+                        <a href="produit.html" class="btn btn-outline">Voir le produit</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/produits/parure-4.jpg" alt="Parure Thioup Multicolore" loading="lazy">
+                        <button class="fav-btn">
+                            <img src="assets/icons/heart-icon.svg" alt="Ajouter aux favoris" class="icon">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Parure Thioup Multicolore</h3>
+                        <p class="product-desc">Éclat de couleurs vives sur fond blanc</p>
+                        <div class="product-meta">
+                            <span class="product-price">45.000 FCFA</span>
+                        </div>
+                        <a href="produit.html" class="btn btn-outline">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Senartisans</h4>
+                    <p>Artisanat sénégalais de qualité supérieure.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produits.html">Boutique</a></li>
+                        <li><a href="temoins.html">Témoignages</a></li>
+                        <li><a href="quiz.html">Quiz Style</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Informations</h5>
+                    <ul>
+                        <li><a href="#">Livraison & Retours</a></li>
+                        <li><a href="#">Guide des tailles</a></li>
+                        <li><a href="#">Entretien du linge</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Contact</h5>
+                    <address>
+                        <p>Mbour, Sénégal</p>
+                        <p>+221 77 239 02 75</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="socials">
+                    <a href="https://www.instagram.com/senartisans" target="_blank" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" width="24" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@senartisans" target="_blank" aria-label="TikTok">
+                        <img src="assets/icons/tiktok.svg" width="24" alt="TikTok">
+                    </a>
+                    <a href="https://maps.app.goo.gl/i4RpfmBzkJJPjYRC9?g_st=ipc" target="_blank" aria-label="Google Maps">
+                        <img src="assets/icons/map.svg" width="24" alt="Google Maps">
+                    </a>
+                </div>
+                <p>Mbour, Sénégal — © 2025 Senartisans. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart" id="close-cart">
+                <img src="assets/icons/close-icon.svg" alt="Fermer" class="icon">
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">0 FCFA</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkout-btn">Procéder au paiement</button>
+            <a href="panier.html" class="btn btn-outline btn-full">Voir le panier détaillé</a>
+        </div>
+    </div>
+    
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

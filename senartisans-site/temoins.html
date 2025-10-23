@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages - Senartisans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/transitions.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/images/logo/logo-senartisans.png" alt="Senartisans" width="80">
+            </div>
+            <p>Chargement...</p>
+        </div>
+    </div>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo + Nom -->
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo-senartisans.png" alt="Senartisans" class="logo-img">
+                <span class="logo-text">Senartisans</span>
+            </a>
+            
+            <!-- Navigation Desktop (visible seulement sur desktop) -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="produits.html" class="nav-link">Boutique</a></li>
+                    <li><a href="temoins.html" class="nav-link">Témoignages</a></li>
+                    <li><a href="quiz.html" class="nav-link">Quiz Style</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Actions utilisateur -->
+            <div class="header-actions">
+                <!-- Favoris -->
+                <a href="favoris.html" class="icon-btn" id="fav-btn">
+                    <img src="assets/icons/heart-icon.svg" alt="Favoris" class="icon">
+                    <span class="fav-count">0</span>
+                </a>
+                
+                <!-- Panier -->
+                <button class="icon-btn" id="cart-btn">
+                    <img src="assets/icons/cart-icon.svg" alt="Panier" class="icon">
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <!-- Menu Mobile (visible seulement sur mobile) -->
+                <button class="icon-btn" id="menu-btn">
+                    <img src="assets/icons/menu-icon.svg" alt="Menu" class="icon">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Témoignages Clients</h1>
+                <p>Découvrez ce que nos clients pensent de nos produits</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Stats -->
+    <section class="testimonials-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Note moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">127+</div>
+                    <div class="stat-label">Clients satisfaits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Recommanderait</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="testimonials-grid-section">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial-card large">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Je suis absolument ravie de ma parure thioup ! Les couleurs sont encore plus belles en vrai qu'en photo. 
+                            La qualité du tissu est exceptionnelle et le service client était aux petits soins. 
+                            Je recommande Senartisans les yeux fermés !"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/temoins/temoin-1.jpg" alt="Aïcha D." loading="lazy">
+                            <div>
+                                <h4>Aïcha D.</h4>
+                                <p>Dakar, Sénégal</p>
+                                <p class="product-mention">Parure Thioup Bleu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Commande facile et livraison rapide. Le produit est de très bonne qualité et les motifs sont magnifiques. 
+                            Parfait pour ajouter une touche africaine à ma déco !"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/temoins/temoin-2.jpg" alt="Pierre L." loading="lazy">
+                            <div>
+                                <h4>Pierre L.</h4>
+                                <p>Paris, France</p>
+                                <p class="product-mention">Parure Thioup Vert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Le service client est au top ! J'ai eu une question sur les tailles et ils m'ont répondu en moins d'une heure. 
+                            Les produits sont magnifiques et l'initiative écologique est vraiment appréciable."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/temoins/temoin-3.jpg" alt="Mariam S." loading="lazy">
+                            <div>
+                                <h4>Mariam S.</h4>
+                                <p>Mbour, Sénégal</p>
+                                <p class="product-mention">Parure Thioup Indigo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "J'ai offert une parure à ma sœur pour son anniversaire et elle en est ravie ! 
+                            La qualité est au rendez-vous et l'emballage était soigné. Une belle attention."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/temoins/temoin-4.jpg" alt="Fatou K." loading="lazy">
+                            <div>
+                                <h4>Fatou K.</h4>
+                                <p>Thiès, Sénégal</p>
+                                <p class="product-mention">Cadeau</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card large">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "En tant qu'expatriée, je cherchais un moyen d'apporter une touche du Sénégal dans ma maison en Europe. 
+                            Senartisans a été la parfaite découverte ! Non seulement les produits sont magnifiques, 
+                            mais en plus je soutiens l'artisanat local et le développement durable. 
+                            Ma chambre est transformée et chaque matin je me réveille avec un peu de Sénégal autour de moi."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/temoins/temoin-5.jpg" alt="Sophie M." loading="lazy">
+                            <div>
+                                <h4>Sophie M.</h4>
+                                <p>Bruxelles, Belgique</p>
+                                <p class="product-mention">Collection Complète</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Testimonial CTA -->
+    <section class="add-testimonial">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Vous aussi, partagez votre expérience</h2>
+                    <p>Votre avis compte pour nous et pour les futurs clients. Partagez votre expérience Senartisans !</p>
+                    <a href="contact.html" class="btn btn-primary">Laisser un témoignage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Senartisans</h4>
+                    <p>Artisanat sénégalais de qualité supérieure.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produits.html">Boutique</a></li>
+                        <li><a href="temoins.html">Témoignages</a></li>
+                        <li><a href="quiz.html">Quiz Style</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Informations</h5>
+                    <ul>
+                        <li><a href="#">Livraison & Retours</a></li>
+                        <li><a href="#">Guide des tailles</a></li>
+                        <li><a href="#">Entretien du linge</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Contact</h5>
+                    <address>
+                        <p>Mbour, Sénégal</p>
+                        <p>+221 77 239 02 75</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="socials">
+                    <a href="https://www.instagram.com/senartisans" target="_blank" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" width="24" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@senartisans" target="_blank" aria-label="TikTok">
+                        <img src="assets/icons/tiktok.svg" width="24" alt="TikTok">
+                    </a>
+                    <a href="https://maps.app.goo.gl/i4RpfmBzkJJPjYRC9?g_st=ipc" target="_blank" aria-label="Google Maps">
+                        <img src="assets/icons/map.svg" width="24" alt="Google Maps">
+                    </a>
+                </div>
+                <p>Mbour, Sénégal — © 2025 Senartisans. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart" id="close-cart">
+                <img src="assets/icons/close-icon.svg" alt="Fermer" class="icon">
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">0 FCFA</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkout-btn">Procéder au paiement</button>
+            <a href="panier.html" class="btn btn-outline btn-full">Voir le panier détaillé</a>
+        </div>
+    </div>
+    
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* animations.css - Animations CSS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(60, 110, 71, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(60, 110, 71, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(60, 110, 71, 0.3); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+.animated-icon {
+    transition: var(--transition);
+}
+
+.animated-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(60, 110, 71, 0.4));
+}
+
+/* Effets de gradients */
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #A1C9A2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.2;
+    animation: float 15s ease-in-out infinite;
+}
+
+.blob-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #A1C9A2 100%);
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.blob-2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #A1C9A2 0%, #3C6E47 100%);
+    bottom: 10%;
+    right: 10%;
+    animation-delay: 5s;
+}
+
+.mesh-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(60, 110, 71, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(161, 201, 162, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
